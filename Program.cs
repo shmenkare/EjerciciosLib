@@ -127,10 +127,12 @@ namespace EjerciciosLib
                     break;
             }
 
-             /*5 Hacer una programa que pueda calcular
-			El perimetro y el área de cualquier
-			Polígono regular, pero que le prequnte al
-			Usuario qué desea calcular.*/
+            /*5 Hacer una programa que pueda calcular
+           El perimetro y el área de cualquier
+           Polígono regular, pero que le prequnte al
+           Usuario qué desea calcular.*/
+
+            Console.WriteLine();
 
 
 
