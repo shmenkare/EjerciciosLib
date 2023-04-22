@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace EjerciciosLib
@@ -60,7 +62,7 @@ namespace EjerciciosLib
 		   Impuesto de un producto, pero coloque
 		   Un impuesto del 0 % si el producto es
 		   Medicina.*/
-            float imp = 0.15f;
+            /*float imp = 0.15f;
             string item = "pan";
             string med= "ibuprofeno";
             float precio = 0.0f;
@@ -85,7 +87,7 @@ namespace EjerciciosLib
                 total = precio;
             }
 
-            Console.WriteLine("El total a pagar son {0} Bs. ", total);
+            Console.WriteLine("El total a pagar son {0} Bs. ", total);*/
 
 
             /*4 Hacer un programa que le pida al usuario
@@ -93,17 +95,39 @@ namespace EjerciciosLib
 			Del día que corresponde ese número en la
 			Semana.*/
 
+            int num;
+            Console.WriteLine("Ingresa un numero");
+            num =Convert.ToInt32(Console.ReadLine());
 
+            switch (num)
+            {
+                case 1:
+                    Console.WriteLine("Es lunes");
+                    break;
+                case 2:
+                    Console.WriteLine("Es martes");
+                    break;
+                case 3:
+                    Console.WriteLine("Es miercoles");
+                    break;
+                case 4:
+                    Console.WriteLine("Es jueves");
+                    break;
+                case 5:
+                    Console.WriteLine("Es viernes");
+                    break;
+                case 6:
+                    Console.WriteLine("Es sabado");
+                    break;
+                case 7:
+                    Console.WriteLine("Es domingo");
+                    break;
+                default:
+                    Console.WriteLine("no es un dia");
+                    break;
+            }
 
-
-
-
-
-
-
-
-
-            /*5 Hacer una programa que pueda calcular
+             /*5 Hacer una programa que pueda calcular
 			El perimetro y el área de cualquier
 			Polígono regular, pero que le prequnte al
 			Usuario qué desea calcular.*/
