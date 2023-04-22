@@ -88,13 +88,6 @@ namespace EjerciciosLib
             Console.WriteLine("El total a pagar son {0} Bs. ", total);
 
 
-
-
-
-
-
-
-
             /*4 Hacer un programa que le pida al usuario
 			Un número del 1 al 7 y escriba el nombre
 			Del día que corresponde ese número en la
