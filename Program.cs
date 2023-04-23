@@ -62,32 +62,35 @@ namespace EjerciciosLib
 		   Impuesto de un producto, pero coloque
 		   Un impuesto del 0 % si el producto es
 		   Medicina.*/
-            /*float imp = 0.15f;
-            string item = "pan";
-            string med= "ibuprofeno";
+            //string[] item = new string[5] { "pan", "queso", "pasta", "atun", "pollo" };
+            //string[] med = new string[5] { "atamel", "ibuprofeno", "loartan", "vitamina c", "alcohol" };
+
+            float imp = 0.15f;
+            string item, med, producto;
             float precio = 0.0f;
-            string producto;
             float total = 0.0f;
+            int opcion;
 
-
+            Console.WriteLine("Tipo de producto \n 1- Item \n 2- Medicina");
+            opcion = Convert.ToInt32(Console.ReadLine());
+            
             Console.WriteLine("Ingrese el producto");
-           producto= Console.ReadLine();
-
+            producto= Console.ReadLine();
 
             Console.WriteLine("Ingrese el precio");
             precio = Convert.ToSingle(Console.ReadLine());
 
 
-            if (producto ==item)
+            if (opcion ==1)
             {
-                total =precio + precio * imp;
+                total = precio + precio * imp;
             }
-            else if (producto ==med) 
+            else if (opcion ==2) 
             {
                 total = precio;
             }
 
-            Console.WriteLine("El total a pagar son {0} Bs. ", total);*/
+            Console.WriteLine("El total a pagar por el {0} son {1} Bs. ", producto, total);
 
 
             /*4 Hacer un programa que le pida al usuario
