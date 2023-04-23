@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,7 +10,7 @@ namespace EjerciciosLib
     {
         static void Main(string[] args)
         {
-            //EJERCICIOS PRÁCTICOS CAP 2
+            //EJERCICIOS PRÁCTICOS CAP 3 TOMA DE DECISIONES
 
 
             /*1 Hacer un programa que le pida a
@@ -165,7 +165,7 @@ namespace EjerciciosLib
                 Console.WriteLine("El perimtro a calcular es {0} cm ", perimetro);
             }
 
-            //EJERCICIOS PRÁCTICOS CAP 3
+            //EJERCICIOS PRÁCTICOS CAP 4 CICLOS
 
 
 
