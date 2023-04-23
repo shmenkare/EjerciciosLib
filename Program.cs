@@ -65,7 +65,7 @@ namespace EjerciciosLib
             //string[] item = new string[5] { "pan", "queso", "pasta", "atun", "pollo" };
             //string[] med = new string[5] { "atamel", "ibuprofeno", "loartan", "vitamina c", "alcohol" };
 
-            float imp = 0.15f;
+            /*float imp = 0.15f;
             string item, med, producto;
             float precio = 0.0f;
             float total = 0.0f;
@@ -90,7 +90,7 @@ namespace EjerciciosLib
                 total = precio;
             }
 
-            Console.WriteLine("El total a pagar por el {0} son {1} Bs. ", producto, total);
+            Console.WriteLine("El total a pagar por el {0} son {1} Bs. ", producto, total);*/
 
 
             /*4 Hacer un programa que le pida al usuario
@@ -98,7 +98,7 @@ namespace EjerciciosLib
 			Del día que corresponde ese número en la
 			Semana.*/
 
-            int num;
+            /*int num;
             Console.WriteLine("Ingresa un numero");
             num =Convert.ToInt32(Console.ReadLine());
 
@@ -128,14 +128,44 @@ namespace EjerciciosLib
                 default:
                     Console.WriteLine("no es un dia");
                     break;
-            }
+            }*/
 
             /*5 Hacer una programa que pueda calcular
            El perimetro y el área de cualquier
            Polígono regular, pero que le prequnte al
            Usuario qué desea calcular.*/
 
-            Console.WriteLine();
+            float perimetro, area,lado,N, ap = 0.0f;
+            int opcion;
+
+            Console.WriteLine("¿Que desea calcular?");
+            Console.WriteLine("1- Area \n2- Perimetro");
+            opcion = Convert.ToInt32(Console.ReadLine());
+
+            if (opcion==1)
+            {
+                Console.WriteLine("Dame el valor de un lado en cmts");
+                lado = Convert.ToSingle(Console.ReadLine());
+                Console.WriteLine("Dame la cantidad de lados");
+                N = Convert.ToSingle(Console.ReadLine());
+                Console.WriteLine("Dame el valor de la apotema en ctms");
+                ap = Convert.ToSingle(Console.ReadLine());
+
+                area = lado * N * ap / 2;
+                Console.WriteLine("El area a calcular es {0} cm² ", area);
+            }
+            else if (opcion==2) 
+            {
+                Console.WriteLine("Dame el valor de un lado en cmts");
+                lado = Convert.ToSingle(Console.ReadLine());
+                Console.WriteLine("Dame la cantidad de lados");
+                N = Convert.ToSingle(Console.ReadLine());
+
+                perimetro = lado * N;
+                Console.WriteLine("El perimtro a calcular es {0} cm ", perimetro);
+            }
+
+
 
 
 
