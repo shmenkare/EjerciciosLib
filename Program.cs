@@ -184,22 +184,46 @@ namespace EjerciciosLib
 			}
 
 			/*2 Hacer un programa que calcule el resultado
-			de un número elevado a cualquier potencia*/ 
+			de un número elevado a cualquier potencia*/
 
-			
-			
-			
-			
-			
-			/*3 Hacer un programa que encuentre los números 
+			int num;
+			int numcont;
+			int pot;
+			string valor = "";
+
+			Console.WriteLine("Dame el nmero a potenciar");
+			valor= Console.ReadLine();	
+			num = Convert.ToInt32(valor);
+
+            Console.WriteLine("Dame la potencia a elevar");
+			pot = Convert.ToInt32(Console.ReadLine());	
+
+			for(int i = 1;i <pot; i++)
+			{
+				Thread.Sleep(300);
+				Console.Write(i);
+                Console.Write(num);
+				Console.WriteLine();
+				num = num * pot;
+				
+			}
+            Console.WriteLine("El numero {0} elevado a la {1} potencia es {2}", valor, pot, num );
+
+
+
+
+
+
+
+            /*3 Hacer un programa que encuentre los números 
 			primos que existen entre el ly el 1000*/
-			
-			
-			
-			
-			
 
-			/*4 Hacer un programa que calcule el  promedio de edad 
+
+
+
+
+
+            /*4 Hacer un programa que calcule el  promedio de edad 
 			de un grupo de personas y diga cuál es la 
 			de edad más grande y cuál es la más joven*/
 
