@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using System.Threading;
 
 namespace EjerciciosLib
 {
@@ -135,7 +136,7 @@ namespace EjerciciosLib
 		   Polígono regular, pero que le prequnte al
 		   Usuario qué desea calcular.*/
 
-            float perimetro, area, lado, N, ap = 0.0f;
+           /* float perimetro, area, lado, N, ap = 0.0f;
             int opcion;
 
             Console.WriteLine("¿Que desea calcular?");
@@ -163,16 +164,24 @@ namespace EjerciciosLib
 
                 perimetro = lado * N;
                 Console.WriteLine("El perimtro a calcular es {0} cm ", perimetro);
-            }
+            }*/
 
-            //EJERCICIOS PRÁCTICOS CAP 4 CICLOS
+			//EJERCICIOS PRÁCTICOS CAP 4 CICLOS
 
-            /*1 Hacer un programa que muestre la tabla de 
-              multiplicar del 1 al IO de cualquier número*/
+			/*1 Hacer un programa que muestre la tabla de 
+              multiplicar del 1 al 1O de cualquier número*/
 
+			int numero;
+			int res;
+			Console.WriteLine("Dme un numero para generar la tabla de multiplicar");
+			numero = Convert.ToInt32(Console.ReadLine());	
 
-
-
+			for (int i = 1; i <=10; i++)
+			{
+				res = numero * i;
+				Thread.Sleep(300);
+				Console.WriteLine("{0}x{1} = {2}", numero, i, res);
+			}
 
 			/*2 Hacer un programa que calcule el resultado
 			de un número elevado a cualquier potencia*/ 
@@ -189,6 +198,7 @@ namespace EjerciciosLib
 			
 			
 			
+
 			/*4 Hacer un programa que calcule el  promedio de edad 
 			de un grupo de personas y diga cuál es la 
 			de edad más grande y cuál es la más joven*/
