@@ -167,6 +167,33 @@ namespace EjerciciosLib
 
             //EJERCICIOS PRÁCTICOS CAP 4 CICLOS
 
+            /*1 Hacer un programa que muestre la tabla de 
+              multiplicar del 1 al IO de cualquier número*/
+
+
+
+
+
+			/*2 Hacer un programa que calcule el resultado
+			de un número elevado a cualquier potencia*/ 
+
+			
+			
+			
+			
+			
+			/*3 Hacer un programa que encuentre los números 
+			primos que existen entre el ly el 1000*/
+			
+			
+			
+			
+			
+			/*4 Hacer un programa que calcule el  promedio de edad 
+			de un grupo de personas y diga cuál es la 
+			de edad más grande y cuál es la más joven*/
+
+
 
 
 
