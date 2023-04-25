@@ -233,7 +233,9 @@ namespace EjerciciosLib
                     Console.Write("i"+i+" /");
                     Console.WriteLine("j"+j);
 
-                    if (i % j != 0)
+					float coc = i / j;
+
+                    if (i % j != 0 &&  coc <= j)
                     {
                         
                         Thread.Sleep(150);
