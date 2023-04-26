@@ -216,34 +216,35 @@ namespace EjerciciosLib
 			/*3 Hacer un programa que encuentre los números 
 		   primos que existen entre el 1 y el 1000*/
 
-			float n1 = 0.0f;
-			float n2 = 0.0f;
+			float n1= 1.0f;
+            float n2 = 10.0f;
+
+            bool esPrimo;
 			
-			Console.WriteLine("Extrae los numeros primos entre");
-			Console.WriteLine("n1");
-			n1= Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("n2");
-            n2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine();
+			//Console.WriteLine("Extrae los numeros primos entre");
+			//Console.WriteLine("n1");
+			//n1= Convert.ToInt32(Console.ReadLine());
+   //         Console.WriteLine("n2");
+   //         n2 = Convert.ToInt32(Console.ReadLine());
+   //         Console.WriteLine();
+
 
             for (float i = n1; i <= n2; i++) 
 			{ 
-				for (float j = i-1; j > 1.0f; j--) 
+				for (float j = 1; j <= n2; j++) 
 				{
                     Console.Write("i"+i+" /");
-                    Console.WriteLine("j"+j);
+                    Console.Write("j"+j+"=");
+                    Console.WriteLine(i*j);
 
-					float coc = i / j;
+					if (i *j == i )
+					{
+						Thread.Sleep(150);
+						Console.WriteLine("El numero {0} es posible primo", i);
+					}
 
-                    if (i % j != 0 &&  coc <= j)
-                    {
-                        
-                        Thread.Sleep(150);
-                        Console.WriteLine("El numero {0} es primo", i);
-                    }
-
-                }
-                Console.WriteLine(i);
+				}
+				Console.WriteLine(i);
                 Console.WriteLine();
             }
 
