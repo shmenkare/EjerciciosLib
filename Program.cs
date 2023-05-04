@@ -11,14 +11,14 @@ namespace EjerciciosLib
     {
         static void Main(string[] args)
         {
-			//EJERCICIOS PRÁCTICOS CAP 3 TOMA DE DECISIONES
+            //EJERCICIOS PRÁCTICOS CAP 3 TOMA DE DECISIONES
 
 
-			/*1 Hacer un programa que le pida a
+            /*1 Hacer un programa que le pida a
 			La computadora un número y responda si
 			es par o impar.*/
 
-			/*int numero;
+            /*int numero;
 			Console.WriteLine("Dame un numero");
 			numero = Convert.ToInt32(Console.ReadLine());
 			if ((numero % 2) == 0)
@@ -32,12 +32,12 @@ namespace EjerciciosLib
 			}
 			Console.WriteLine();*/
 
-			/*2 Hacer un programa que transforme de
+            /*2 Hacer un programa que transforme de
 			grados a radianes o de radianes a grados
 			dependiendo de lo que necesite el
 			usuario.*/
 
-			/*float num = 0.0f;
+            /*float num = 0.0f;
 			int opcion;
 
 			Console.WriteLine("ingresa un numero");
@@ -59,14 +59,14 @@ namespace EjerciciosLib
 					break;
 			}*/
 
-			/*3 Hacer un programa que calcule el
+            /*3 Hacer un programa que calcule el
 		   Impuesto de un producto, pero coloque
 		   Un impuesto del 0 % si el producto es
 		   Medicina.*/
-			//string[] item = new string[5] { "pan", "queso", "pasta", "atun", "pollo" };
-			//string[] med = new string[5] { "atamel", "ibuprofeno", "loartan", "vitamina c", "alcohol" };
+            //string[] item = new string[5] { "pan", "queso", "pasta", "atun", "pollo" };
+            //string[] med = new string[5] { "atamel", "ibuprofeno", "loartan", "vitamina c", "alcohol" };
 
-			/*float imp = 0.15f;
+            /*float imp = 0.15f;
 			string item, med, producto;
 			float precio = 0.0f;
 			float total = 0.0f;
@@ -94,12 +94,12 @@ namespace EjerciciosLib
 			Console.WriteLine("El total a pagar por el {0} son {1} Bs. ", producto, total);*/
 
 
-			/*4 Hacer un programa que le pida al usuario
+            /*4 Hacer un programa que le pida al usuario
 			Un número del 1 al 7 y escriba el nombre
 			Del día que corresponde ese número en la
 			Semana.*/
 
-			/*int num;
+            /*int num;
 			Console.WriteLine("Ingresa un numero");
 			num =Convert.ToInt32(Console.ReadLine());
 
@@ -131,12 +131,12 @@ namespace EjerciciosLib
 					break;
 			}*/
 
-			/*5 Hacer una programa que pueda calcular
+            /*5 Hacer una programa que pueda calcular
 		   El perimetro y el área de cualquier
 		   Polígono regular, pero que le prequnte al
 		   Usuario qué desea calcular.*/
 
-			/* float perimetro, area, lado, N, ap = 0.0f;
+            /* float perimetro, area, lado, N, ap = 0.0f;
 			 int opcion;
 
 			 Console.WriteLine("¿Que desea calcular?");
@@ -166,12 +166,12 @@ namespace EjerciciosLib
 				 Console.WriteLine("El perimtro a calcular es {0} cm ", perimetro);
 			 }*/
 
-			//EJERCICIOS PRÁCTICOS CAP 4 CICLOS
+            //EJERCICIOS PRÁCTICOS CAP 4 CICLOS
 
-			/*1 Hacer un programa que muestre la tabla de 
+            /*1 Hacer un programa que muestre la tabla de 
               multiplicar del 1 al 1O de cualquier número*/
 
-			/*int numero;
+            /*int numero;
 			int res;
 			Console.WriteLine("Dme un numero para generar la tabla de multiplicar");
 			numero = Convert.ToInt32(Console.ReadLine());	
@@ -183,10 +183,10 @@ namespace EjerciciosLib
 				Console.WriteLine("{0}x{1} = {2}", numero, i, res);
 			}*/
 
-			/*2 Hacer un programa que calcule el resultado
+            /*2 Hacer un programa que calcule el resultado
 			de un número elevado a cualquier potencia*/
 
-			/*int num, numconst;
+            /*int num, numconst;
 			int pot;
 			string valor = "";
 
@@ -216,35 +216,35 @@ namespace EjerciciosLib
 			/*3 Hacer un programa que encuentre los números 
 		   primos que existen entre el 1 y el 1000*/
 
-			float n1= 1.0f;
+            float n1 = 1.0f;
             float n2 = 10.0f;
 
             bool esPrimo;
-			
-			//Console.WriteLine("Extrae los numeros primos entre");
-			//Console.WriteLine("n1");
-			//n1= Convert.ToInt32(Console.ReadLine());
-   //         Console.WriteLine("n2");
-   //         n2 = Convert.ToInt32(Console.ReadLine());
-   //         Console.WriteLine();
+
+            //Console.WriteLine("Extrae los numeros primos entre");
+            //Console.WriteLine("n1");
+            //n1= Convert.ToInt32(Console.ReadLine());
+            //         Console.WriteLine("n2");
+            //         n2 = Convert.ToInt32(Console.ReadLine());
+            //         Console.WriteLine();
 
 
-            for (float i = n1; i <= n2; i++) 
-			{ 
-				for (float j = 1; j <= n2; j++) 
-				{
-                    Console.Write("i"+i+" /");
-                    Console.Write("j"+j+"=");
-                    Console.WriteLine(i*j);
+            for (float i = n1; i <= n2; i++)
+            {
+                for (float j = 1; j <= n2; j++)
+                {
+                    Console.Write("i" + i + " /");
+                    Console.Write("j" + j + "=");
+                    Console.WriteLine(i * j);
 
-					if (i *j == i )
-					{
-						Thread.Sleep(150);
-						Console.WriteLine("El numero {0} es posible primo", i);
-					}
+                    if (i * j == i)
+                    {
+                        Thread.Sleep(150);
+                        Console.WriteLine("El numero {0} es posible primo", i);
+                    }
 
-				}
-				Console.WriteLine(i);
+                }
+                Console.WriteLine(i);
                 Console.WriteLine();
             }
 
